@@ -107,3 +107,48 @@ Ejecuta el comando para compilar el archivo final para Android:
 ```bash
 eas build -p android --profile production
 ```
+
+## 📸 Capturas de Pantalla de la Aplicación
+
+A continuación se muestran las interfaces principales del flujo de la aplicación.
+
+### 1. WelcomeScreen (Pantalla de Inicio)
+Establece el tema visual con el fondo de "Los 3 Puerquitos" y sirve como entrada principal al sistema.
+
+<img width="551" height="988" alt="image" src="https://github.com/user-attachments/assets/d86c9c7b-5e22-41f1-aa46-98523c145f04" />
+
+### 2. MainMenuScreen (Menú Principal)
+Menú simple que ofrece las opciones de Alta de Mascota y Consulta de Expedientes.
+
+<img width="550" height="987" alt="image" src="https://github.com/user-attachments/assets/b1132d2e-106a-4ab3-900b-1150b230a6e2" />
+
+
+### 3. CreatePetScreen (Formulario de Alta)
+Formulario para registrar los datos generales de una nueva mascota y su propietario.
+
+<img width="412" height="844" alt="image" src="https://github.com/user-attachments/assets/0ed2b276-b289-4d85-9203-2e3259edce79" />
+
+
+### 4. PetListScreen (Lista de Expedientes)
+Muestra todas las mascotas registradas. Al tocar un ítem, navega al detalle.
+
+<img width="411" height="819" alt="image" src="https://github.com/user-attachments/assets/dbea47df-7533-4ec6-9eee-e4c6d3b610f6" />
+
+
+### 5. PetDetailScreen (Detalle y Historial)
+Muestra los datos generales de la mascota, el historial de consultas y vacunas, e incluye botones para agregar nuevos registros.
+
+<img width="409" height="638" alt="image" src="https://github.com/user-attachments/assets/1d828e81-8b87-4001-bfb0-66fcdb781ac8" />
+
+
+### 6. AddActionScreen (Agregar Consulta)
+Ejemplo de formulario dinámico utilizado para añadir una nueva consulta al historial médico de la mascota seleccionada.
+
+<img width="407" height="716" alt="image" src="https://github.com/user-attachments/assets/b39f4442-cadc-4354-9b90-fcb961976b04" />
+
+### 7. AddActionScreen (Agregar Vacuna)
+La misma pantalla dinámica, configurada para registrar una nueva vacuna y su fecha de aplicación.
+
+<img width="411" height="573" alt="image" src="https://github.com/user-attachments/assets/c2b8cf85-6d8a-4246-ba9c-08a11a2e50d3" />
+
+
