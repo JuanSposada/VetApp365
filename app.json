@@ -20,7 +20,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.juansposada.snack190e0e53e48745bb83e6fc11ed150dcf"
     },
     "web": {
       "favicon": "./assets/favicon.png"
