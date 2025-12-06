@@ -1,11 +1,47 @@
-# Sample Snack app
+# 🐷 VetApp365: Veterinaria Los 3 Puerquitos
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Esta es una aplicación móvil desarrollada con **React Native** (usando Expo) para la gestión de expedientes de mascotas en la Veterinaria "Los 3 Puerquitos". La aplicación permite dar de alta nuevas mascotas y llevar un registro detallado de su historial médico y vacunas.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+## 🌟 Características Principales
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+* **Registro de Mascotas:** Captura de datos básicos del paciente (nombre, especie, dueño, etc.).
+* **Gestión de Expedientes:** Consulta detallada de datos de la mascota.
+* **Historial Médico:** Adición y visualización de consultas con motivo, diagnóstico y tratamiento.
+* **Registro de Vacunas:** Adición y visualización de vacunas aplicadas.
+* **Persistencia de Datos:** Uso de `AsyncStorage` para guardar la información localmente en el dispositivo.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+## 🛠️ Tecnologías Utilizadas
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+* **Framework:** React Native
+* **Entorno:** Expo
+* **Navegación:** `react-navigation` (Stack Navigator)
+* **Almacenamiento Local:** `@react-native-async-storage/async-storage` (implementado en `src/utils/Storage.js`).
+* **Lenguaje:** JavaScript (ES6+)
+
+---
+
+## 🏗️ Estructura del Proyecto
+
+El proyecto sigue una estructura modular para separar la lógica de negocio, la UI y la navegación:
+
+```
+vetapp365/
+├── node_modules/
+├── src/
+│   ├── assets/
+│   │   └── fondo_puerquitos.png   <- Imagen de fondo
+│   ├── screens/
+│   │   ├── AddActionScreen.js     <- Añadir Consulta/Vacuna
+│   │   ├── CreatePetScreen.js     <- Formulario de Alta
+│   │   ├── MainMenuScreen.js      <- Menú Principal
+│   │   ├── PetDetailScreen.js     <- Detalle y Historial (CRUD)
+│   │   ├── PetListScreen.js       <- Lista de Mascotas
+│   │   └── WelcomeScreen.js       <- Pantalla de Inicio
+│   └── utils/
+│       ├── Constants.js           <- Estructuras de datos (initialPetState)
+│       └── Storage.js             <- Lógica de AsyncStorage (CRUD)
+├── App.js                         <- Contenedor principal y Stack Navigator
+├── package.json                   
+└── README.md                      
+```
+
