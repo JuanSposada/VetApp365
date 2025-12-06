@@ -44,4 +44,66 @@ vetapp365/
 ├── package.json                   
 └── README.md                      
 ```
+---
 
+## 🚀 Puesta en Marcha (Instalación Local)
+
+Sigue estos pasos para descargar, instalar y ejecutar el proyecto en tu entorno de desarrollo.
+
+### 1. Requisitos
+
+Asegúrate de tener instalado **Node.js** y la CLI de Expo.
+
+```bash
+# Instalar Expo CLI globalmente (si aún no lo tienes)
+npm install -g expo-cli
+```
+
+### 2. Instalación de Dependencias
+
+Navega a la carpeta principal del proyecto (`vetapp365`) y ejecuta:
+
+```bash
+npm install
+```
+
+### 3. Ejecutar la Aplicación
+```bash
+expo start
+```
+
+Esto abrirá Expo Dev Tools en tu navegador. Puedes escanear el código QR con la aplicación Expo Go en tu teléfono o usar un emulador/simulador para ver la aplicación.
+
+## 📦 Compilación para Producción (APK/AAB)
+
+Para generar el archivo ejecutable (`.apk` o `.aab`), utilizamos **EAS Build** (Expo Application Services).
+
+### 1. Instalar EAS CLI
+
+Asegúrate de que la herramienta EAS esté instalada globalmente:
+
+```bash
+npm install -g eas-cli
+```
+
+### 2. Configuración e Inicio de Sesión
+
+Inicia sesión con tu cuenta de Expo:
+
+```bash
+eas login
+```
+
+### 3. Configurar el Proyecto (si es la primera vez)
+
+```bash
+eas build:configure
+```
+
+### 4. Iniciar la Compilación
+
+Ejecuta el comando para compilar el archivo final para Android:
+
+```bash
+eas build -p android --profile production
+```
